@@ -3,24 +3,21 @@
    ========================================= */
 :root {
     /* Colors */
-    --color-primary: #228B22;
-    /* Forest Green */
-    --color-secondary: #8B4513;
-    /* Earth Brown */
-    --color-accent: #87CEEB;
-    /* Sky Blue */
+    --color-primary: #2E7D32;
+    --color-secondary: #4CAF50;
+    --color-accent: #81C784;
     --color-white: #FFFFFF;
-    /* Clean White */
     --color-text-dark: #333333;
     --color-text-light: #F9F9F9;
-    --color-bg-light: #F4F7F6;
+    --color-bg-light: #F5F7F5;
+    --color-btn-hover: #1B5E20;
 
     /* Typography */
     --font-heading: 'Poppins', sans-serif;
     --font-body: 'Open Sans', sans-serif;
 
     /* Spacing */
-    --container-width: 1200px;
+    --container-width: 1100px;
     --header-height: 80px;
     --spacing-sm: 0.5rem;
     --spacing-md: 1rem;
@@ -29,6 +26,10 @@
 
     /* Transitions */
     --transition-fast: 0.3s ease;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 /* =========================================
@@ -102,9 +103,9 @@ img {
 }
 
 .btn-primary:hover {
-    background-color: #1a6b1a;
+    background-color: var(--color-btn-hover);
     transform: translateY(-2px);
-    box-shadow: 0 4px 10px rgba(34, 139, 34, 0.3);
+    box-shadow: 0 4px 10px rgba(46, 125, 50, 0.3);
 }
 
 .btn-secondary {
@@ -119,7 +120,7 @@ img {
 }
 
 .section-padding {
-    padding: var(--spacing-xl) 0;
+    padding: 60px 20px;
 }
 
 .text-center {
@@ -152,6 +153,14 @@ img {
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-img {
+    height: 40px;
+    width: auto;
 }
 
 .logo-accent {
@@ -289,7 +298,7 @@ img {
    7. FOOTER
    ========================================= */
 .main-footer {
-    background-color: #2c3e50;
+    background-color: var(--color-btn-hover);
     color: var(--color-white);
     padding-top: var(--spacing-xl);
 }
@@ -354,7 +363,7 @@ img {
 }
 
 .footer-bottom {
-    background-color: #243342;
+    background-color: #113f14;
     padding: var(--spacing-md) 0;
     text-align: center;
 }
@@ -362,4 +371,38 @@ img {
 .footer-bottom p {
     font-size: 0.85rem;
     color: #95a5a6;
+}
+
+/* =========================================
+   8. ANIMATIONS & COMPONENTS
+   ========================================= */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card {
+    background: var(--color-white);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: var(--spacing-lg);
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--color-primary);
 }

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | Conservation Kenya</title>
+    <title>Contact Us | NatureKeep</title>
 
     <!-- SEO Meta Tags -->
     <meta name="description"
@@ -22,9 +22,9 @@
     <style>
         .contact-form {
             background: #fff;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            padding: 3rem;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
         }
 
         .form-group {
@@ -35,19 +35,56 @@
             display: block;
             margin-bottom: 0.5rem;
             font-weight: 600;
+            color: var(--color-primary);
         }
 
         .form-group input,
         .form-group textarea {
             width: 100%;
-            padding: 12px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
+            padding: 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
             font-family: inherit;
+            transition: border-color 0.3s ease;
+            background-color: #fafafa;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--color-primary);
+            background-color: #fff;
         }
 
         .form-group textarea {
             resize: vertical;
+        }
+
+        .contact-info {
+            background: var(--color-primary);
+            color: white;
+            padding: 3rem;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        .contact-info h2,
+        .contact-info h3 {
+            color: white !important;
+        }
+
+        .map-placeholder {
+            width: 100%;
+            height: 250px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 2px dashed rgba(255, 255, 255, 0.5);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            margin-top: 2rem;
+            font-weight: 600;
         }
     </style>
 </head>
@@ -57,7 +94,8 @@
     <!-- Navigation -->
     <header class="main-header">
         <div class="container nav-container">
-            <a href="index.html" class="logo">Conservation<span class="logo-accent">Kenya</span></a>
+            <a href="index.html" class="logo"><img src="logoo.png" alt="NatureKeep Logo" class="logo-img">Nature<span
+                    class="logo-accent">Keep</span></a>
 
             <button class="mobile-nav-toggle" aria-label="Toggle navigation">
                 <span class="bar"></span>
@@ -94,30 +132,36 @@
                     style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 4rem;">
 
                     <!-- Contact Info -->
-                    <div class="contact-info">
+                    <div class="contact-info fade-in">
                         <h2>Get In Touch</h2>
-                        <p style="margin-bottom: 2rem;">Whether you want to volunteer, donate, or partner with us, reach
+                        <p style="margin-bottom: 2rem; color: rgba(255, 255, 255, 0.9);">Whether you want to volunteer,
+                            donate, or partner with us, reach
                             out using the details below.</p>
 
                         <div class="info-item" style="margin-bottom: 1.5rem;">
-                            <h3 style="font-size: 1.2rem; color: var(--color-primary);">Email</h3>
-                            <p>info@conservationkenya.org</p>
+                            <h3 style="font-size: 1.2rem;">Email</h3>
+                            <p style="color: rgba(255, 255, 255, 0.8);">info@naturekeep.org</p>
                         </div>
 
                         <div class="info-item" style="margin-bottom: 1.5rem;">
-                            <h3 style="font-size: 1.2rem; color: var(--color-primary);">Phone</h3>
-                            <p>+254 700 000 000</p>
+                            <h3 style="font-size: 1.2rem;">Phone</h3>
+                            <p style="color: rgba(255, 255, 255, 0.8);">+254 700 000 000</p>
                         </div>
 
                         <div class="info-item" style="margin-bottom: 1.5rem;">
-                            <h3 style="font-size: 1.2rem; color: var(--color-primary);">Location</h3>
-                            <p>Nairobi, Kenya</p>
+                            <h3 style="font-size: 1.2rem;">Location</h3>
+                            <p style="color: rgba(255, 255, 255, 0.8);">Nairobi, Kenya</p>
+                        </div>
+
+                        <div class="map-placeholder">
+                            [ Interactive Map Placeholder ]
                         </div>
                     </div>
 
                     <!-- Contact Form -->
-                    <div class="contact-form-wrapper">
+                    <div class="contact-form-wrapper fade-in" style="transition-delay: 0.2s;">
                         <form class="contact-form" action="#" method="POST">
+                            <h2 style="margin-bottom: 1.5rem; color: var(--color-primary);">Send a Message</h2>
                             <div class="form-group">
                                 <label for="name">Full Name</label>
                                 <input type="text" id="name" name="name" required placeholder="John Doe">
@@ -139,7 +183,7 @@
                                     placeholder="Your message here..."></textarea>
                             </div>
 
-                            <button type="submit" class="btn btn-primary">Send Message</button>
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
                         </form>
                     </div>
 
@@ -152,7 +196,7 @@
     <footer class="main-footer">
         <div class="container footer-container">
             <div class="footer-col">
-                <h3>Conservation<span class="logo-accent">Kenya</span></h3>
+                <h3>Nature<span class="logo-accent">Keep</span></h3>
                 <p>Restoring degraded land and protecting biodiversity in Kenya through community-led tree planting and
                     sustainable practices.</p>
             </div>
@@ -169,7 +213,7 @@
 
             <div class="footer-col">
                 <h4>Contact Us</h4>
-                <p>Email: info@conservationkenya.org</p>
+                <p>Email: info@naturekeep.org</p>
                 <p>Phone: +254 700 000 000</p>
                 <p>Nairobi, Kenya</p>
             </div>
@@ -186,7 +230,7 @@
 
         <div class="footer-bottom">
             <div class="container">
-                <p>&copy; <span id="current-year"></span> Conservation Kenya. All rights reserved.</p>
+                <p>&copy; <span id="current-year"></span> NatureKeep. All rights reserved.</p>
             </div>
         </div>
     </footer>
