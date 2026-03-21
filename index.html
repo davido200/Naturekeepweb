@@ -50,10 +50,15 @@
     </header>
 
     <main>
-        <!-- Hero Section -->
         <section class="hero fade-in">
+            <div class="hero-media" aria-hidden="true">
+                <div class="hero-slide hero-slide-1"></div>
+                <div class="hero-slide hero-slide-2"></div>
+                <div class="hero-slide hero-slide-3"></div>
+            </div>
             <div class="hero-overlay"></div>
             <div class="container hero-content">
+                <p class="hero-kicker">Community Conservation in Kenya</p>
                 <h1 class="hero-title">Restoring Nature. Empowering Communities. Protecting Life.</h1>
                 <p class="hero-text">Community-led conservation efforts restoring land, protecting wildlife, and
                     fighting climate change in Kenya.</p>
@@ -64,88 +69,201 @@
             </div>
         </section>
 
-        <!-- Feature Section -->
+        <section class="impact-strip section-padding">
+            <div class="container">
+                <div class="section-heading text-center">
+                    <p class="section-eyebrow">Impact Snapshot</p>
+                    <h2>Measured action across land, water, and communities</h2>
+                </div>
+                <div class="impact-grid">
+                    <article class="impact-card fade-in">
+                        <p class="impact-value" data-counter="125000">0</p>
+                        <p class="impact-label">Trees planted</p>
+                    </article>
+                    <article class="impact-card fade-in">
+                        <p class="impact-value" data-counter="340">0</p>
+                        <p class="impact-label">Hectares restored</p>
+                    </article>
+                    <article class="impact-card fade-in">
+                        <p class="impact-value" data-counter="28">0</p>
+                        <p class="impact-label">Community groups engaged</p>
+                    </article>
+                    <article class="impact-card fade-in">
+                        <p class="impact-value" data-counter="4600">0</p>
+                        <p class="impact-label">Learners reached</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
         <section class="section-padding">
             <div class="container">
-                <div class="text-center" style="margin-bottom: 3rem;">
+                <div class="section-heading text-center">
+                    <p class="section-eyebrow">Focus Areas</p>
                     <h2>Our Focus Areas</h2>
                     <p>Protecting the environment through targeted, high-impact initiatives.</p>
                 </div>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
-
-                    <!-- Card 1 -->
+                <div class="feature-grid">
                     <div class="card fade-in">
-                        <div class="card-icon">🌳</div>
+                        <div class="card-icon" aria-hidden="true">01</div>
                         <h3>Reforestation</h3>
                         <p>Restoring degraded land through community-led tree planting campaigns to combat climate
                             change.</p>
                     </div>
 
-                    <!-- Card 2 -->
                     <div class="card fade-in">
-                        <div class="card-icon">💧</div>
+                        <div class="card-icon" aria-hidden="true">02</div>
                         <h3>Water Conservation</h3>
                         <p>Protecting vital watersheds to ensure clean, accessible water and resilient ecosystems.</p>
                     </div>
 
-                    <!-- Card 3 -->
                     <div class="card fade-in">
-                        <div class="card-icon">🐘</div>
+                        <div class="card-icon" aria-hidden="true">03</div>
                         <h3>Wildlife Protection</h3>
                         <p>Safeguarding natural habitats and minimizing human-wildlife conflict across diverse
                             landscapes.</p>
                     </div>
-
                 </div>
             </div>
         </section>
 
-        <!-- Footer -->
-        <footer class="main-footer">
-            <div class="container footer-container">
-                <div class="footer-col">
-                    <h3>Nature<span class="logo-accent">Keep</span></h3>
-                    <p>Restoring degraded land and protecting biodiversity in Kenya through community-led tree
-                        planting
-                        and sustainable practices.</p>
+        <section class="section-padding path-section">
+            <div class="container">
+                <div class="section-heading text-center">
+                    <p class="section-eyebrow">Find Your Path</p>
+                    <h2>Choose how you want to support conservation</h2>
+                    <p>Clear entry points make it easier for supporters, volunteers, and organizations to act.</p>
                 </div>
-
-                <div class="footer-col">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="what-we-do.html">What We Do</a></li>
-                        <li><a href="projects.html">Projects</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h4>Contact Us</h4>
-                    <p>Email: info@naturekeep.org</p>
-                    <p>Phone: +254 700 000 000</p>
-                    <p>Nairobi, Kenya</p>
-                </div>
-
-                <div class="footer-col">
-                    <h4>Follow Us</h4>
-                    <div class="social-links">
-                        <a href="#" aria-label="Facebook">FB</a>
-                        <a href="#" aria-label="Twitter">TW</a>
-                        <a href="#" aria-label="Instagram">IG</a>
-                    </div>
+                <div class="path-grid">
+                    <article class="path-card fade-in">
+                        <p class="path-tag">Hands-on</p>
+                        <h3>I Want to Volunteer</h3>
+                        <p>Join planting days, restoration events, and field education activities with local teams.</p>
+                        <a href="contact.html" class="btn btn-secondary">Volunteer</a>
+                    </article>
+                    <article class="path-card fade-in">
+                        <p class="path-tag">Financial Support</p>
+                        <h3>I Want to Donate</h3>
+                        <p>Support nurseries, field logistics, school outreach, and long-term stewardship work.</p>
+                        <a href="contact.html" class="btn btn-primary">Donate</a>
+                    </article>
+                    <article class="path-card fade-in">
+                        <p class="path-tag">Institutional</p>
+                        <h3>I Want to Partner</h3>
+                        <p>Collaborate as an NGO, business, school, or county stakeholder to scale measurable impact.</p>
+                        <a href="contact.html" class="btn btn-secondary">Partner</a>
+                    </article>
                 </div>
             </div>
+        </section>
 
-            <div class="footer-bottom">
-                <div class="container">
-                    <p>&copy; <span id="current-year"></span> NatureKeep. All rights reserved.</p>
+        <section class="section-padding testimonial-section">
+            <div class="container">
+                <div class="section-heading text-center">
+                    <p class="section-eyebrow">Voices From the Field</p>
+                    <h2>Authentic stories build trust faster than claims</h2>
+                </div>
+                <div class="testimonial-grid">
+                    <blockquote class="testimonial-card fade-in">
+                        <p>"The tree nursery gave our youth group practical work and a reason to protect the riverbank."</p>
+                        <footer>Mary Wanjiku, Community Organizer</footer>
+                    </blockquote>
+                    <blockquote class="testimonial-card fade-in">
+                        <p>"Students do not just hear about conservation now. They plant, measure, and follow the change."</p>
+                        <footer>David Otieno, Teacher Partner</footer>
+                    </blockquote>
+                    <blockquote class="testimonial-card fade-in">
+                        <p>"NatureKeep works with local people instead of around them, and that makes the projects last."</p>
+                        <footer>Anne Chebet, Volunteer Coordinator</footer>
+                    </blockquote>
                 </div>
             </div>
-        </footer>
+        </section>
 
-        <!-- Main JS -->
-        <script src="js/main.js"></script>
+        <section class="section-padding updates-section">
+            <div class="container">
+                <div class="section-heading text-center">
+                    <p class="section-eyebrow">Latest From the Field</p>
+                    <h2>Recent updates keep the organization visible and active</h2>
+                </div>
+                <div class="updates-grid">
+                    <article class="update-card fade-in">
+                        <img src="Image/planting14.jpeg" alt="Community members planting seedlings in Kenya">
+                        <div class="update-card-body">
+                            <p class="update-meta">March 2026</p>
+                            <h3>Native seedling drive expanded into two new restoration zones</h3>
+                            <p>Field teams coordinated community planting days and set up follow-up monitoring for
+                                survival rates.</p>
+                        </div>
+                    </article>
+                    <article class="update-card fade-in">
+                        <img src="Image/nursery5.jpg" alt="Seedlings growing in a community nursery">
+                        <div class="update-card-body">
+                            <p class="update-meta">February 2026</p>
+                            <h3>Nursery training equipped local groups with propagation skills</h3>
+                            <p>Workshops focused on nursery care, seed selection, and preparing resilient indigenous
+                                species.</p>
+                        </div>
+                    </article>
+                    <article class="update-card fade-in">
+                        <img src="Image/natural.jpg" alt="Kenyan landscape connected to land restoration work">
+                        <div class="update-card-body">
+                            <p class="update-meta">January 2026</p>
+                            <h3>Watershed awareness campaign connected schools and local leaders</h3>
+                            <p>Conservation education sessions highlighted the link between forests, soils, and clean
+                                water access.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <div class="footer-col">
+                <h3>Nature<span class="logo-accent">Keep</span></h3>
+                <p>Restoring degraded land and protecting biodiversity in Kenya through community-led tree planting
+                    and sustainable practices.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="what-we-do.html">What We Do</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <p>Email: info@naturekeep.org</p>
+                <p>Phone: +254 700 000 000</p>
+                <p>Nairobi, Kenya</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">FB</a>
+                    <a href="#" aria-label="Twitter">TW</a>
+                    <a href="#" aria-label="Instagram">IG</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; <span id="current-year"></span> NatureKeep. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="contact.html" class="floating-cta" aria-label="Open Get Involved page">Join</a>
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>
