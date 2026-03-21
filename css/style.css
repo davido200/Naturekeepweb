@@ -258,7 +258,7 @@ iframe {
     background-repeat: no-repeat;
     opacity: 0;
     transform: scale(1);
-    animation: heroCrossfade 24s infinite, heroKenBurns 24s infinite;
+    animation: heroCrossfade 32s infinite, heroKenBurns 32s infinite;
     will-change: transform, opacity;
 }
 
@@ -275,6 +275,11 @@ iframe {
 .hero-slide-3 {
     background-image: url('../Image/planting14.jpeg');
     animation-delay: 16s;
+}
+
+.hero-slide-4 {
+    background-image: url('../Image/planting8.jpeg');
+    animation-delay: 24s;
 }
 
 .hero-overlay {
